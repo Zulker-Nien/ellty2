@@ -10,18 +10,15 @@ interface StoreState {
     error: string | null;
     initialized: boolean,
 
-    // Auth actions
     register: (username: string, password: string) => Promise<void>;
     login: (username: string, password: string) => Promise<void>;
     logout: () => void;
     initializeAuth: () => void;
 
-    // Discussion actions
     fetchDiscussions: () => Promise<void>;
     createDiscussion: (startingNumber: number) => Promise<void>;
     addOperation: (parentId: string, operation: string, operand: number) => Promise<void>;
 
-    // UI actions
     setError: (error: string | null) => void;
     clearError: () => void;
 }

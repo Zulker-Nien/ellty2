@@ -13,7 +13,6 @@ export default function Home() {
   const [authMode, setAuthMode] = useState<'login' | 'register' | null>(null);
 
   useEffect(() => {
-    // Initialize authentication from localStorage
     initializeAuth();
   }, [initializeAuth]);
 

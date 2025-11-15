@@ -16,7 +16,7 @@ export default function RegisterForm({ onSwitchToLogin }: { onSwitchToLogin: () 
         try {
             await register(username, password);
         } catch (err) {
-            // Error is handled by store
+           console.error(err);
         }
     };
 

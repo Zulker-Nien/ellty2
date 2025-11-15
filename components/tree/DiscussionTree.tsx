@@ -14,7 +14,7 @@ export default function DiscussionTree() {
 
     useEffect(() => {
         fetchDiscussions();
-        const interval = setInterval(fetchDiscussions, 5000); // Refresh every 5 seconds
+        const interval = setInterval(fetchDiscussions, 5000); 
         return () => clearInterval(interval);
     }, [fetchDiscussions]);
 

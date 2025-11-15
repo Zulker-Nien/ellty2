@@ -22,7 +22,7 @@ export default function AddOperationForm({ parentId, onClose }: AddOperationForm
             await addOperation(parentId, operation, parseInt(operand));
             onClose();
         } catch (err) {
-            // Error handled by store
+            console.error(err);
         }
     };
 
